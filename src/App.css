@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto+Condensed:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header{
+    background-color: darkgray;
+    background-image: linear-gradient(to right, #E7613A, #DD3038);
+}
+.titel{
+    background-color: #FDF4F2;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+}
+.hottest{
+    font-size: 50px;
+    margin-top: 60px;
+}
+h4{
+    font-size: 20px;
+    margin-bottom: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    padding-bottom: 80px;
+    padding-top: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul, a{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    text-space: 20px;
+    font-size: 16px;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
+li{
+    margin: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 120px;
+    background-color: #ffffff;
+    border: 10px double white;
+    margin: 1rem;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    width: 220px;
+    height: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FDF4F2;
 }
